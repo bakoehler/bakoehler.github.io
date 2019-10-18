@@ -14,7 +14,7 @@ myimages[1]="image1.PNG"
 myimages[2]="image2.PNG"
 myimages[3]="image3.PNG"
 
-var ry=Math.floor(Math.random()*myimages.length - 1)
+var ry=Math.floor(Math.random()*(myimages.length)) + 1
 
 document.write('<img src="'+myimages[ry]+'" border=0>')
 }
