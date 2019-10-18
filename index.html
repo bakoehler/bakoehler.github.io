@@ -1,12 +1,6 @@
 <script language="JavaScript">
 <!--
 
-/*
-Random Image Script- By JavaScript Kit (http://www.javascriptkit.com)
-Over 400+ free JavaScripts here!
-Keep this notice intact please
-*/
-
 function random_imglink(){
 var myimages=new Array()
 //specify random images below. You can have as many as you wish
@@ -14,7 +8,7 @@ myimages[1]="image1.PNG"
 myimages[2]="image2.PNG"
 myimages[3]="image3.PNG"
 
-var ry=Math.floor(Math.random()*(myimages.length)) + 1
+var ry=1+Math.floor(Math.random()*myimages.length)
 
 document.write('<img src="'+myimages[ry]+'" border=0>')
 }
